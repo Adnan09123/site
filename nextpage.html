@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Job Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding-right: 50px; /* Adjust as needed */
+        }
+        .container {
+            width: 800px; /* Adjusted width */
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-right: 20px; /* To add some space from the right edge */
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="file"], textarea, select {
+            width: 50%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row > div {
+            width: 48%;
+        }
+    </style>
+    <script>
+        function hey() {
+            alert('Your response is submitted sucessfilly');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Software Engineer Job Registration</h2>
+        <form action="submit_registration.php" method="post" enctype="multipart/form-data">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <div class="row">
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+
+            <label for="education">Highest Education</label>
+            <select id="education" name="education" required>
+                <option value="highschool">High School Diploma</option>
+                <option value="associate">Associate Degree</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">Ph.D.</option>
+            </select>
+
+            <label for="skills">Skills (comma separated)</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="position">Position Applied For</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="statement">Personal Statement</label>
+            <textarea id="statement" name="statement" rows="5" required></textarea>
+
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+            <input onclick="hey()" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

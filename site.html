@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.RFpVv5iHbFO167kfKqThggHaFj&pid=Api&P=0&h=180');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .myapplication {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .myapplication h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .myapplication button {
+            background-color: #1fac7d;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.25em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .myapplication button:hover {
+            background-color: #a9f0c5;
+            transform: scale(1.05);
+        }
+
+        .myapplication button:active {
+            background-color: #545b62;
+            transform: scale(1);
+        }
+
+        .myapplication>button {
+            width: 200px;
+            height: 50px;
+            background-color: transparent;
+            color: rgb(13, 51, 92);
+            border-radius: 50px;
+            border: 1px solid white;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function hey() {
+            alert ('Welcome to next page')
+        }
+    
+        function redirectToNextPage() {
+            window.location.href = 'nextpage.html';
+        }
+ 
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1><span style="color: rgb(139, 139, 222);">Job Title: Software Engineer</span></h1>
+
+
+            <ul>
+                <li>Company: Tech Innovators Inc.</li>
+                <li>Location: San Francisco, CA</li>
+                <li>Employment Type: Full-time</li>
+                <li>Salary: $100,000 - $130,000 per year</li>
+            </ul>
+
+            <h3>Job Description:</h3>
+            <p> Tech Innovators Inc. is seeking a talented and driven Software Engineer to join our dynamic team. The
+                ideal
+                candidate will be responsible for designing, developing, and maintaining high-quality software
+                solutions. This
+                role requires a strong foundation in software engineering principles, excellent problem-solving skills,
+                and the
+                ability to work collaboratively in a fast-paced environment.</p>
+
+            <h3>Responsibilities:</h3>
+            <ul>
+                <li>Design, develop, test, and deploy scalable software applications.</li>
+                <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+                <li>Write clean, maintainable, and efficient code.</li>
+                <li>Participate in code reviews to ensure high code quality and shared knowledge.</li>
+                <li>Troubleshoot, debug, and optimize software applications.</li>
+                <li>Stay up-to-date with the latest industry trends and technologies to ensure we are using the most
+                    effective
+                    tools and techniques.</li>
+            </ul>
+
+            <h3>Requirements:</h3>
+            <ol>
+                <li>Bachelor's degree in Computer Science, Software Engineering, or a related field.</li>
+                <li>3+ years of professional software development experience.</li>
+                <li>Familiarity with version control systems (e.g., Git)</li>
+                <li>Experience with web development frameworks and technologies (e.g., React, Angular, Node.js).</li>
+            </ol>
+
+            <h3>Preferred Qualifications:</h3>
+            <ol>
+                <li>Master’s degree in Computer Science or a related field.</li>
+                <li>Experience with cloud platforms (e.g., AWS, Azure, Google Cloud).</li>
+                <li>Knowledge of database management systems (e.g., SQL, NoSQL).</li>
+                <li>Familiarity with DevOps practices and tools (e.g., Docker, Kubernetes).</li>
+
+            </ol>
+
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Competitive salary and performance bonuses.</li>
+                <li>Comprehensive health, dental, and vision insurance.</li>
+                <li>401(k) retirement plan with company match.</li>
+                <li>Flexible work hours and remote work options.</li>
+                <li>Collaborative and innovative work environment.</li>
+            </ul>
+
+            <p>About Tech Innovators Inc.: Tech Innovators Inc. is a leading technology company dedicated to creating
+                innovative
+                solutions that drive progress and improve lives. Our team is composed of passionate professionals
+                committed to
+                excellence and continuous improvement. We value creativity, collaboration, and a willingness to take on
+                new
+                challenges. Join us and be a part of a company where your ideas and contributions can make a real
+                impact.</p>
+
+            <p> How to Apply: Interested candidates are encouraged to apply by submitting their resume and a cover
+                letter
+                detailing their relevant experience and why they are a good fit for this position. Please send your
+                application
+                to careers@techinnovators.com with the subject line "Software Engineer Application</p>
+
+        </div>
+    </div>
+    <div class="myapplication">
+        <h3>Click the Below Link To apply</h3>
+        <button onclick="redirectToNextPage()" type="button" class="btn btn-secondary btn-lg">Apply</button>
+
+    </div>
+
+</body>
+
+</html>
